@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - USF Grocery Store</title>
+    <link rel="stylesheet" href="css/shoppingcart.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.webp" alt="USF Grocery Store Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoppingcart.html" class="active">Shopping Cart</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="aboutus.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cart-container">
+            <div class="cart">
+                <h2>Your Cart</h2>
+                <p id="emptyMessage">Your shopping cart is empty. <a href="index.html">Click here to return to the store.</a></p>
+                <table id="cartTable" style="display:none;">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+                <div id="cartTotal" style="display:none;">
+                    <strong>Total: $<span id="totalAmount">0.00</span></strong>
+                </div>
+                <button id="continueShoppingButton" onclick="location.href='index.html'" style="display:none;">Continue Shopping</button>
+            </div>
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-content">
+                    <p>Total Before Discounts: $<span id="totalBeforeDiscounts">0.00</span></p>
+                    <p>Discounts</p>
+                    <label><input type="checkbox" id="usfeats"> USFEATS - 10% off Bakery</label>
+                    <label><input type="checkbox" id="usfclean"> USFCLEAN - 10% off Cleaning Supplies</label>
+                    <label><input type="checkbox" id="usfhydrates"> USFHYDRATES - 5% off Beverages</label>
+                    <button onclick="applyDiscounts()">Apply Discounts</button>
+                    <p><strong>Order Total: $<span id="summaryTotalAmount">0.00</span></strong></p>
+                    <button id="checkoutButton" onclick="checkout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 USF Grocery Store</p>
+    </footer>
+
+ 
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="img/logo.webp" alt="USF Grocery Store Logo" class="modal-logo">
+            <p>Order placed!</p>
+            <button onclick="location.href='index.html'">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="js/shoppingcart.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USF Grocery Store</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.webp" alt="USF Grocery Store Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoppingcart.html">Shopping Cart</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="aboutus.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to USF Grocery Store</h1>
+        <p>Explore our wide range of products!</p>
+        <section>
+            <div class="products">
+                <div class="product" onclick="openModal('fresh-produce-modal')">
+                    <img src="img/fresh-produce.jpeg" alt="Fresh Produce">
+                    <h3>Fresh Produce</h3>
+                    <p>Enjoy our fresh fruits and vegetables picked daily from local farms.</p>
+                </div>
+                <div class="product" onclick="openModal('bakery-modal')">
+                    <img src="img/bakery.jpeg" alt="Bakery">
+                    <h3>Bakery</h3>
+                    <p>Freshly baked bread, pastries, and cakes available daily.</p>
+                </div>
+                <div class="product" onclick="openModal('dairy-products-modal')">
+                    <img src="img/dairy.jpeg" alt="Dairy Products">
+                    <h3>Dairy Products</h3>
+                    <p>High-quality dairy products to meet all your dietary needs.</p>
+                </div>
+                <div class="product" onclick="openModal('beverages-modal')">
+                    <img src="img/beverages.jpeg" alt="Beverages">
+                    <h3>Beverages</h3>
+                    <p>A selection of refreshing drinks to quench your thirst.</p>
+                </div>
+                <div class="product" onclick="openModal('cleaning-supplies-modal')">
+                    <img src="img/cleaning-supplies.jpeg" alt="Cleaning Supplies">
+                    <h3>Cleaning Supplies</h3>
+                    <p>Everything you need to keep your home sparkling clean.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+    <div id="fresh-produce-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('fresh-produce-modal')">&times;</span>
+            <h2>Fresh Produce</h2>
+            <div class="dropdown-content"></div>
+        </div>
+    </div>
+    <div id="bakery-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bakery-modal')">&times;</span>
+            <h2>Bakery</h2>
+            <div class="dropdown-content"></div>
+        </div>
+    </div>
+    <div id="dairy-products-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('dairy-products-modal')">&times;</span>
+            <h2>Dairy Products</h2>
+            <div class="dropdown-content"></div>
+        </div>
+    </div>
+    <div id="beverages-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('beverages-modal')">&times;</span>
+            <h2>Beverages</h2>
+            <div class="dropdown-content"></div>
+        </div>
+    </div>
+    <div id="cleaning-supplies-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cleaning-supplies-modal')">&times;</span>
+            <h2>Cleaning Supplies</h2>
+            <div class="dropdown-content"></div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification">
+        <p id="notificationMessage"></p>
+    </div>
+
+    <footer>
+        <p>&copy;  USF Grocery Store</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

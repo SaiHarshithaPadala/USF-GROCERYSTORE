@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - USF Grocery Store</title>
+    <link rel="stylesheet" href="css/analytics.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.webp" alt="USF Grocery Store Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoppingcart.html">Shopping Cart</a></li>
+                <li><a href="analytics.html" class="active">Analytics</a></li>
+                <li><a href="aboutus.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="analytics-section">
+            <div class="chart-container">
+                <canvas id="revenueChart"></canvas>
+                <p class="chart-summary">This chart shows the revenue generated over time.</p>
+            </div>
+            <div class="chart-container">
+                <canvas id="paymentMethodChart"></canvas>
+                <p class="chart-summary">This chart shows the sales distribution by different payment methods.</p>
+            </div>
+            <div class="chart-container">
+                <canvas id="topSellingProductsChart"></canvas>
+                <p class="chart-summary">This chart highlights the top-selling products in the store per week.</p>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/analytics.js"></script>
+</body>
+</html>

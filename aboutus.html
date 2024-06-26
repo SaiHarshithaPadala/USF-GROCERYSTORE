@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Grocery Store</title>
+    <link rel="stylesheet" href="css/aboutus.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.webp" alt="USF Grocery Store Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoppingcart.html">Shopping Cart</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="aboutus.html" class="active">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <div class="about-content">
+                <div class="profile-container">
+                    <img src="img/me.jpg" alt="Padala Sai Harshitha" class="profile-photo">
+                </div>
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <p>Hello! My name is Padala Sai Harshitha, and I am currently pursuing a Master's degree in Business Analytics and Information Systems at the University of South Florida (USF). I embarked on this exciting journey to America in the Fall of 2023, and I am both thrilled and a bit anxious about the opportunities and challenges that lie ahead. Originally hailing from the vibrant state of Andhra Pradesh, India, I bring with me a diverse cultural perspective and a passion for technology and data.</p>
+                    <p>Prior to my studies at USF, I gained substantial experience as a Rust Developer at AGS Health, where I specialized in data migration projects for 1.5 years. This role not only honed my technical skills but also enhanced my problem-solving abilities and my understanding of complex data systems. The hands-on experience I gained during this period was instrumental in shaping my analytical thinking and technical proficiency. Integrating libraries like Chart.js allowed you to create dynamic and interactive charts, enhancing your understanding of presenting data effectively</p>
+                    <p>Developing this website has been an enriching experience. It has allowed me to apply and expand my knowledge in web development, particularly in HTML, CSS, and JavaScript. The process has been both challenging and rewarding, providing me with valuable insights into creating user-friendly and aesthetically pleasing web interfaces.</p>
+                    <p>I am enthusiastic about continuing to learn and grow in the field of Business Analytics and Information Systems, and I look forward to leveraging my skills to make meaningful contributions to the tech industry. Feel free to explore my work and connect with me.</p>
+                </div>
+            </div>
+        </section>
+        <section class="details-section">
+            <a class="detail-card" href="https://github.com/SaiHarshithaPadala" target="_blank">
+                <img src="img/github.webp" alt="GITHUB LINK">
+            </a>
+            <div class="detail-card" onclick="openModal('contactModal')">
+                <img src="img/contact.webp" alt="CONTACT INFO">
+            </div>
+            <div class="detail-card" onclick="openModal('resumeModal')">
+                <img src="img/resumeicon.webp" alt="RESUME">
+            </div>
+        </section>
+    </main>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('contactModal')">&times;</span>
+            <p>Email: saiharshithap@usf.edu</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/saiharshithapadala/" target="_blank">saiharshithapadala</a></p>
+            <p>Phone: +1 656 204 0627</p>
+        </div>
+    </div>
+
+  
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('resumeModal')">&times;</span>
+            <img src="img/harshitha.jpg" alt="Resume" class="resume-image">
+        </div>
+    </div>
+
+    <script src="js/aboutus.js"></script>
+</body>
+</html>
